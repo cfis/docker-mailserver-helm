@@ -221,9 +221,7 @@ deployment:
     RELAY_USER:
     RELAY_PASSWORD:
 
-  securityContext:
-    runAsUser: 5000
-    runAsGroup: 5000
+  securityContext: {}
 
   containerSecurityContext:
     readOnlyRootFilesystem: false # incompatible with the way docker-mailserver works
